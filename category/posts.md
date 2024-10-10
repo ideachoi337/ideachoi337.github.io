@@ -3,4 +3,6 @@ layout: category
 title: Posts
 ---
 
-Another sample category page.
+This is page for blog posts not related to AI.
+
+Posts get listed below here.

@@ -9,13 +9,22 @@ layout: page
 <ul class="posts-list">
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-    <li>
-      <h3>
+    <li style="display:flex;">
+      <div class="list_box">
+        {% if post.image %}
         <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
+          <div class="thumb_box list_child">
+            <img class="thumb" src="{{ post.image }}" alt="thumb"/>
+          </div>
         </a>
-      </h3>
+        {% endif %}
+        <h3 class="list_child">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+            <small>{{ post.date | date_to_string }}</small>
+          </a>
+        </h3>
+      </div>
     </li>
   {% endfor %}
 </ul>
