@@ -8,7 +8,7 @@ highlighter:      rouge
 # Setup
 title:            H. Choi
 tagline:          'My Homepage'
-description:      'Studying & Researching about AI'
+description:      'Studying & Researching on AI'
 url:              https://ideachoi337.github.io
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
