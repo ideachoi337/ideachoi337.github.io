@@ -3,7 +3,7 @@ layout: post
 title: Unsupervised TAS
 categories: Projects
 image: /images/2023-12-03-project-unsupervised-TAS-01.png
-tags: video 
+tags: Video 
 ---
 
 

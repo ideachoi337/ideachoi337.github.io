@@ -2,6 +2,7 @@
 layout: post
 title: Projects in progress
 categories: Projects
+image: /images/white.png
 ---
 
 ### Extending Output Token Length Limits in LMM

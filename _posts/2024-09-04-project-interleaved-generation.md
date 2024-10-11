@@ -7,7 +7,7 @@ tag: LMM
 ---
 
 ### Interleaved Data Generation: Illustrated Instruction Task
-![Image](/images/2024-09-04-project-interleaved-generation-01.png)
+![Image](/images/2024-09-04-project-interleaved-generation-01.png){: width="500"}
 Interleaved text & image generation means generating images and text together. Without specific output format, model can generate images between generated texts freely.<br>
 Illustrated Instruction Task was introduced in paper <q>Generating Illustrated Insturction</q> (CVPR 2024).<br>
 This is one of the interleaved data generation task and task for generating (step, image) pairs for given goal. Thus, model need to generate multiple images.<br>
@@ -38,7 +38,7 @@ For training model, these dataset can be used.
 
 First is YouCook2 Dataset.<br>
 This is dataset of cooking video with cooking step annotations. Because this dataset is not designed for this task, re-formating dataset is needed.<br>
-![Image](/images/2024-09-04-project-interleaved-generation-04.png)
+![Image](/images/2024-09-04-project-interleaved-generation-05.png)
 Instead of simply extract middle frame of cooking-step, frame with high CLIP score with cooking-step string are extracted.
 
 Another dataset is VGSI Dataset.<br>
@@ -49,7 +49,7 @@ Thus, reducing the number of training layer is needed. Upto step 4 can be used w
 For experiments upto step 2 text are used with training whole transformer layer.
 
 Ablation study: Training model head only for image tokens
-![Image](/images/2024-09-04-project-interleaved-generation-05.png)
+![Image](/images/2024-09-04-project-interleaved-generation-04.png){: width="250"}
 As like Anole fine-tuning approach, model head only for image tokens (Token 3 ~ 8196) are trained.<br>
 But this approach resulting in poor quality of image generation.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tennis game(simulator) with simple AI
+title: Tennis game (simulator)
 categories: Projects
 image: /images/2024-06-10-project-tennis-game-01.png
 ---

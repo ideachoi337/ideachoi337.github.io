@@ -16,7 +16,6 @@ Based on Kaggle Notebook from 'SIDDHVR', hyper-parameters and some weighted are 
 Training dataset is consists of 1378 text sequences with ground-truth labels.<br>
 To increase the amount of training data, DAIST-v2 training dataset with 44868 text sequences is also used.
 
-![Image](/images/2023-12-19-project-ai-generated-01.png)
 ### Multinomial Naive Bayse
 Multinomial Naive Bayes is good method for classification problems for discrete features, such as text classification.<br>
 NultinomialNB from sklearn was used, and the following hyperparameters are used.
@@ -50,6 +49,7 @@ The following hyperparameters are used.
 - loss_function(=CrossEntropy)
 
 ### Ensemble
+![Image](/images/2023-12-19-project-ai-generated-01.png)
 Using ensemble with Multinomial Naive Bayes, Linear Classifier, LGBM Classifier and CatBoost Classifier. soft voting is used and weights of [0.068, 0.31, 0.311, 0.311] are used.
 
 ### Result

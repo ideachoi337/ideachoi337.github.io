@@ -3,7 +3,7 @@ layout: post
 title: Online Action Spotting
 categories: Projects
 image: /images/2024-02-28-project-OAS-02.png
-tags: video online
+tags: Video Online
 ---
 
 ### Intro
